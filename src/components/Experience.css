@@ -1,0 +1,232 @@
+/* ===== EXPERIENCE SECTION ===== */
+.experience {
+  background: var(--color-bg-primary);
+}
+
+/* Achievements */
+.experience__achievements {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+.experience__achievement {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.experience__achievement:hover {
+  border-color: var(--color-border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.experience__achievement-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.experience__achievement-value {
+  font-size: 2rem;
+  font-weight: 900;
+  background: var(--gradient-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.experience__achievement-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.experience__achievement-sub {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* Timeline */
+.experience__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.exp-entry {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1.5rem;
+}
+
+.exp-entry__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding-top: 0.5rem;
+}
+
+.exp-entry__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.exp-entry__dot--cyan {
+  background: var(--color-accent-primary);
+  box-shadow: 0 0 12px var(--color-accent-primary);
+}
+
+.exp-entry__dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  opacity: 0.3;
+  animation: pulseGlow 2s ease infinite;
+}
+
+.exp-entry__dot--cyan::after { color: var(--color-accent-primary); }
+
+.exp-entry__line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(180deg, rgba(0,212,255,0.4), transparent);
+  margin-top: 0.5rem;
+  min-height: 40px;
+}
+
+/* Entry Content */
+.exp-entry__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.exp-entry__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.exp-entry__badges {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.exp-entry__role {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.exp-entry__company {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.exp-entry__duration {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  background: rgba(0,0,0,0.2);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.06);
+  flex-shrink: 0;
+}
+
+/* Responsibility Cards */
+.exp-entry__responsibilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.resp-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+}
+
+.resp-card__bullet {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--gradient-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: white;
+}
+
+.resp-card__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.resp-card__desc {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .experience__achievements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exp-entry__responsibilities {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-entry__header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience__achievements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exp-entry {
+    grid-template-columns: 24px 1fr;
+    gap: 1rem;
+  }
+
+  .exp-entry__dot {
+    width: 12px;
+    height: 12px;
+  }
+}
