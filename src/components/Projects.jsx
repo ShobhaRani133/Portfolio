@@ -39,44 +39,6 @@ const projects = [
     icon: '🎭',
     color: 'purple',
   },
-  {
-    id: 'proj-3',
-    title: 'GenAI Chatbot Test Automation',
-    subtitle: 'AI-Powered Assistant Validation',
-    coverage: 65,
-    coverageLabel: 'Scenario Coverage',
-    badgeColor: 'green',
-    tags: ['Selenium Java', 'GenAI', 'NLP Testing', 'API Validation', 'Python'],
-    description:
-      'Developed a specialized test framework for validating GenAI chatbot responses, covering edge cases, intent classification accuracy, context retention, and safety guardrails.',
-    highlights: [
-      'Automated 150+ conversational test scenarios',
-      'Validated NLP intent accuracy and fallback handling',
-      'Tested multi-turn context retention and session management',
-      'API-level validation of LLM response consistency',
-    ],
-    icon: '🤖',
-    color: 'green',
-  },
-  {
-    id: 'proj-4',
-    title: 'API Testing Framework — REST Assured',
-    subtitle: 'Microservices Validation Suite',
-    coverage: 80,
-    coverageLabel: 'API Coverage',
-    badgeColor: 'amber',
-    tags: ['Java', 'REST Assured', 'Postman', 'JSON Schema', 'OAuth'],
-    description:
-      'Created a data-driven API testing framework for microservices architecture, covering authentication flows, CRUD operations, error handling, and schema validation.',
-    highlights: [
-      'JSON Schema validation for all API contracts',
-      'OAuth 2.0 and JWT authentication testing',
-      'Data-driven testing with parameterized test cases',
-      'Parallel execution for faster pipeline feedback',
-    ],
-    icon: '🔌',
-    color: 'amber',
-  },
 ];
 
 export default function Projects() {

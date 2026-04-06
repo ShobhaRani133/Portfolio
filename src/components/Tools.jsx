@@ -8,25 +8,21 @@ const toolCategories = [
       { name: 'Playwright', icon: '🎭', description: 'TypeScript E2E testing' },
       { name: 'WebdriverIO', icon: '⚡', description: 'BDD frameworks' },
       { name: 'TestNG', icon: '🧪', description: 'Java test framework' },
-      { name: 'Mocha', icon: '☕', description: 'JS test runner' },
     ],
   },
   {
     category: 'API Testing',
     tools: [
       { name: 'Postman', icon: '📮', description: 'API exploration & testing' },
-      { name: 'REST Assured', icon: '🔗', description: 'Java API framework' },
       { name: 'Swagger', icon: '📋', description: 'API documentation review' },
-      { name: 'JMeter', icon: '📊', description: 'Performance testing' },
     ],
   },
   {
-    category: 'CI/CD & DevOps',
+    category: 'CI/CD',
     tools: [
       { name: 'GitHub Actions', icon: '🔄', description: 'Workflow automation' },
       { name: 'Git', icon: '🌿', description: 'Version control' },
       { name: 'Docker', icon: '🐳', description: 'Containerization' },
-      { name: 'Jenkins', icon: '🎛️', description: 'Build automation' },
     ],
   },
   {

@@ -3,7 +3,7 @@ import './Skills.css';
 
 const skillCategories = [
   {
-    category: 'Automation Frameworks',
+    category: 'Automation Tools',
     icon: '⚙️',
     color: 'cyan',
     skills: [
@@ -23,7 +23,7 @@ const skillCategories = [
     ],
   },
   {
-    category: 'CI/CD & DevOps',
+    category: 'CI/CD',
     icon: '🚀',
     color: 'green',
     skills: [
@@ -37,7 +37,6 @@ const skillCategories = [
     icon: '🤖',
     color: 'amber',
     skills: [
-      { name: 'GenAI Chatbot Testing', level: 72, tag: 'Growing' },
       { name: 'BDD / Gherkin', level: 85, tag: 'Advanced' },
       { name: 'Cross-browser Testing', level: 88, tag: 'Expert' },
     ],
